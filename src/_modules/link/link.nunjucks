@@ -7,12 +7,17 @@
 {% set _target = spec.target or '_self' %}
 {% set _text = spec.text or 'Default Link' %}
 
-<a
+{% set _icon = spec.icon or '' %}
+
+{# <a
   id="{{_id}}"
   class="link {{_class}}"
   href="{{_href}}"
   target="{{_target}}"
 >
-{{_text}}
-</a>
+  {% if _icon %}
+    <span>{{_icon}}</span>
+  {% endif %}
+  {{_text}}
+</a> #}
 {% endmacro %}

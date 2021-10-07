@@ -1,0 +1,39 @@
+{% macro content(spec) %}
+
+{% set spec = spec or {} %}
+{% set _id = spec.id or '' %}
+{% set _class = spec.class or '' %}
+{% set _href = spec.href or '#' %}
+{% set _target = spec.target or '_self' %}
+{% set _text = spec.text or 'Default Link' %}
+
+{% set _icon = spec.icon or '' %}
+
+<div class="sideContainer">
+
+  <div class="sideContainer__inner">
+
+    <div class="sideContainer__imgTime">
+        <img class="sideContainer__image" src="images/168x94.png" alt="">
+        
+        <p class="sideContainer__timeOverlay">mins:secs</p>
+      </div>
+
+    <div class="sideContainer__textWrapper">
+        <h4 class="sideContainer__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+    <div class="sideContainer__ownerIconWrapper">
+        <p class="sideContainer__owner">Author Owner</p> <span class="sideContainer__ownerIcon">☑️</span>
+    </div>
+
+    <div class="sideContainer__data">
+        <p class="sideContainer__dataViews">views</p>
+        <div class="sideContainer__dataSpot"></div>
+        <p class="sideContainer__dataTime">time</p>
+    </div>
+    </div>
+  </div>
+
+</div>
+
+
+{% endmacro %}
