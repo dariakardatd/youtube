@@ -9,15 +9,16 @@
 
 {% set _icon = spec.icon or '' %}
 
-{# <a
+<a
   id="{{_id}}"
   class="link {{_class}}"
   href="{{_href}}"
   target="{{_target}}"
 >
-  {% if _icon %}
-    <span>{{_icon}}</span>
-  {% endif %}
-  {{_text}}
-</a> #}
+{% if _icon %}
+  It is true
+{% endif %}
+<span>{{_icon}}</span>
+{{_text}}
+</a>
 {% endmacro %}

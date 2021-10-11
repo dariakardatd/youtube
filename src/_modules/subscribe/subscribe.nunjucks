@@ -1,0 +1,88 @@
+{% macro content(spec) %}
+
+
+<div class="subscribe">
+
+  <!-- HEADER -->
+
+  <div class="subscribeWrapper">
+    <div class="subscribeHeaderWrapper">
+
+      <img class="subscribe__logo" src="images/pic_logo.jpeg" alt="" width="48px">
+
+    <div class="subscribeHeaderWrapper__head">
+      <h4 class="subscribe__title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4> 
+      <p class="subscribe__followers">number of subsribers</p>
+    </div>      
+
+    </div>
+
+    <div class="wrapperButton">
+        <button class="subscrive__button">subscribe</button>
+    </div>
+  </div>
+
+<!-- CONTENT -->
+
+  <div class="content">
+
+    <p class="contentDescription j-contentDescription">
+    Follow this tutorial you will learn how to Embed Video files using HTML in web pages. 
+
+    Don't forget to check out our site http://howtech.tv/ for more free how-to videos!<span class="moreText">
+    http://youtube.com/ithowtovids - our feed
+    http://www.facebook.com/howtechtv - join us on facebook
+    https://plus.google.com/1034403827176... - our group in Google+
+    
+    In this tutorial we are going to show you that how to embed video in HTML document. Videos are the best way for understanding anything. Keeping this in mind, working with HTML embedding videos is growing vigorously and there are special videos search engines available on internet. On the other hand people also embed videos in HTML documents as their resume and sharing links to the employers.
+    
+    Step 1 -- Video tag with width and height
+    
+    Over here, HTML is embedding videos from the desktop which we use as a sample. To get started, first let's right click on the file and click on properties. Here there are three things to remember. One is the name of the video file, the extension of the video file and the height and width of the video.
+    
+    Now let's create an HTML document first. For that, open up notepad, and let's start by first typing in the video tag.
+    
+    In this tag, we will set the dimensions of the video, and make sure that they are the same as the original video.
+    
+    Step 2 -- Location of video in the source tag
+    
+    Now it's time to set the source of the video file. For that, we will create a source tag here. Type "src", followed by an equals to sign. The source link should be in inverted commas here. Now we can type the location of the file within the inverted commas.
+    
+    It is important to note that if your html file and video file is in the same location, you only need to write the name of file with its extension.
+    
+    With that done, we will set the type to video forward slash mp4. This is because our video is in the mp4 format.
+    
+    Step 3 -- Selecting HTML video document location
+    
+    Now let's save this document as an html file.
+    
+    Step 4 -- Video HTML file
+    
+    Now let's save this document as an html file. With that done, let's open up the html document in the browser.
+    
+    Step 5 -- Video without navigations
+    
+    Over here, you will notice that there is no video navigation, for example the play or stop button.
+    
+    Step 6 -- Added control attribute in video tag
+    
+    So let's go back to our html document and in video tag, let's type "controls" after defining the dimensions.
+    
+    Step 7 -- Video with navigations
+    
+    Let's refresh the page now and you can see video is playing as you click on the play button.
+    
+    Step 8 -- Set width for video player
+    
+    You can always resize the dimensions of the video player according to your requirements by changing the width and height in the code.
+    
+    And that's it.</span> </p>
+   
+    <button class="read-more-btn j-read-more-btn">show more</button>
+
+  </div>
+
+
+</div>
+
+{% endmacro %}

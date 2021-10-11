@@ -1,0 +1,87 @@
+.subscribe {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(213, 212, 212);
+}
+
+.subscribeWrapper {
+  display: flex;
+  padding-top: 16px;
+  margin-bottom: 12px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+  .subscribeHeaderWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+
+    .subscribe__logo{
+      border-radius: 50%;
+      margin-right: 16px;
+    }
+
+  .subscribeHeaderWrapper__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    .subscribe__title{
+      font-size: 14px;
+      letter-spacing: .3px;
+      font-weight: 500;
+      margin: 0 0 3px 0;
+  }
+
+  .subscribe__followers{
+    font-size: 12px;
+    margin: 0;
+    color: grey;
+  }
+}
+}
+
+.wrapperButton {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+
+  .subscrive__button {
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 16px;
+    background-color: rgb(194, 5, 5);
+    border: none;
+    color: white;
+    border-radius: 3px;
+    letter-spacing: .5px;
+  }
+}
+
+
+// CONTENT
+
+.contentDescription {
+  font-size: 14px;
+}
+
+.moreText {
+  display: none;
+}
+
+.read-more-btn {
+  padding: 0;
+  color: grey;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.contentDescription.show-more {
+  .moreText{
+    display: inline;
+  }
+}

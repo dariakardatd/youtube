@@ -1,0 +1,9 @@
+{% macro content(spec) %}
+
+<div class="commentsHeader"></div>
+
+<p class="commentsHeader"__commentsQuantity>number of comments</p>
+
+<button class="sortBy-btn"><span class="sortBy-icon"><svg display: block; width: 24px; height: 24px;"><g><path d="M21,6H3V5h18V6z M15,11H3v1h12V11z M9,17H3v1h6V17z"></path></g></svg></span> sort by</button>
+
+{% endmacro %}

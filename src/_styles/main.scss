@@ -4,6 +4,9 @@
 // Import Modules
 @import '../_modules/link/link';
 @import '../_modules/listItem/listItem';
+@import '../_modules/optionBar/optionBar';
+@import '../_modules/subscribe/subscribe';
+@import '../_modules/commentsHeader/commentsHeader';
 
 // Box sizing partial styles:
 // Apply a natural box layout model to all elements
@@ -14,7 +17,7 @@
 body, html {
   margin: 0;
   background: rgb(242, 241, 241);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, sans-serif;;
 }
 
 .header {
@@ -117,4 +120,10 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
+}
+
+.trial {
+  width: 500px;
+  height: auto;
+  display: flex;
 }

@@ -23,8 +23,10 @@
 .sideContainer {
     display: flex;
     flex-direction: row;
-    
+    margin-bottom: 10px;
 }
+
+// IMAGE DATA
 
 .sideContainer__inner {
     display: flex;
@@ -38,70 +40,97 @@
     justify-content: flex-end;
     align-items: flex-end;   
     position: relative;
-
-    .sideContainer__timeOverlay {
-        position: absolute;
-        background-color: black;
-        color: white;
-        padding: 3px 4px;
-        margin: 4px ;
-        border-radius: 4px;
-    }
-    
 }
+
+.sideContainer__timeOverlay {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 3px 4px;
+    margin: 4px ;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.overlay {
+    cursor: pointer;
+    position: absolute;
+    border-style: solid;
+    border-width: 30px 0  30px 40px ;
+    border-color: transparent transparent transparent #fff ;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -10px;
+    transition: .5s ease;
+    opacity:0;
+  }
+  
+  .sideContainer__imgTime:hover .overlay {
+    opacity: 1;
+  }
+
+
+
+// SIDE DATA
 
 
 .sideContainer__textWrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-    .sideContainer__title {
-        margin: 0 0 4px 0;
-        font-size: 15px;
-        letter-spacing: .3px;
-        font-weight: 500;
 }
+
+.sideContainer__title {
+    margin: 0 0 4px 0;
+    font-size: 15px;
+    letter-spacing: .3px;
+    font-weight: 500;
+
 }
 
 .sideContainer__ownerIconWrapper{
     display: flex;
     flex-direction: row;
     align-items: center;
-
-    .sideContainer__ownerIcon {
-        padding-left: 4px;
-        margin: 0;
 }
-    .sideContainer__owner {
+
+.sideContainer__ownerIcon {
+    padding-left: 5px;
+    margin: 0;
+}
+
+.sideContainer__owner {
     margin: 0;
     color: gray;
     font-size: 14px;
 }
-}
+
 
 .sideContainer__data {
     display: flex;
     flex-direction: row;
     align-items: center; 
     margin-top: 0;
+}
 
-    .sideContainer__dataSpot {
-        background-color: gray;
-        padding-right: 4px;
-        margin: 0;
-    }
-    
-    .sideContainer__dataViews {
-        margin: 0;
-        color: gray;
-        font-size: 14px;
-    }
+.sideContainer__dataDot {
+    border: 3px solid gray;
+    border-radius: 50%;
+    margin: 0;
+}  
 
-    .sideContainer__dataTime {
-        margin: 0;
-        color: gray;
-        font-size: 14px;
-    }
+.sideContainer__dataViews {
+    margin: 0;
+    color: gray;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.sideContainer__dataTime {
+    margin: 0;
+    color: gray;
+    font-size: 14px;
+    margin-left: 5px;
 }
 
